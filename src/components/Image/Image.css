@@ -19,13 +19,21 @@
   justify-content: space-around;
 }
 
-.image-user > img {
-  border-radius: 1rem;
-  width: 2rem;
-  height: 2rem;
+.image-user > div > img {
+  border-radius: 100%;
+  height: 3rem;
 }
 
-.image-user > span {
+.image-user > div > h1 {
   color: rgb(129, 123, 123);
-  font-size: .8rem;
+  font-size: 1.3rem;
+  font-family: 'Lucida Bright';
+  margin-left: 1rem;
+}
+
+.followers {
+color: rgb(129, 123, 123);
+  font-size: .7rem;
+  font-family: 'Lucida Bright';
+  margin-left: 1rem;
 }

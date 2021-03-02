@@ -20,14 +20,14 @@ const Image = ({image, user, alt}) => {
             <img src={user.profile_image.small} alt={user.first_name}/>
           </div>
           <div>
-            <span>{user.name}</span>        
-            <span>{user.total_likes}</span>
+          <h1>{user.name} </h1>
+          <p className='followers'>Likes: {user.total_likes}</p>
           </div>
     </div>
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <img src={image.small} alt={alt} width='100%'/>  
+        <img src={image.small} alt={alt} width='100%' /> 
       
       </Modal.Body>
     </Modal>
