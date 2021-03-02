@@ -6,7 +6,7 @@ const Image = ({image, user, alt}) => {
   const [lgShow, setLgShow] = useState(false)
   return (
     <div className='image-container' onClick={() => setLgShow(true)}>
-      <img src={image.thumb} alt={alt} height="400px"/>
+      <img src={image.thumb} alt={alt} />
       <div className='image-user'>        
         <img src={user.profile_image.small} alt={user.first_name}/>
         <span>{user.name}</span>        
@@ -24,7 +24,7 @@ const Image = ({image, user, alt}) => {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <img src={image.small} alt={alt}/>
+        <img src={image.small} alt={alt} width='100%'/>
       </Modal.Body>
     </Modal>
     </div>

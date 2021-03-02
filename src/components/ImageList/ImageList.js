@@ -12,8 +12,9 @@ const ImageList = () => {
 
   const pageNumber = 1
   useEffect(() => {
-      fetch(`${singlePagePhotos}&page=${pageNumber}`).then((res) => res.json()).then(data => setPhotos(data))
+      fetch(`${singlePagePhotos}&page=${pageNumber}&per_page=50`).then((res) => res.json()).then(data => setPhotos(data))
   }, [])
+  
 console.log(photos)
   const handleChange = (event) => {
       setInput(event.target.value)
@@ -22,7 +23,7 @@ console.log(photos)
   const handleKeyPressed= (event) => {
       setResults([])
       if(input) {
-        fetch(`${searchPhotos}&page=1&query=${input}`).then((res) => res.json()).then(data => setResults(data.results))
+        fetch(`${searchPhotos}&page=1&query=${input}&per_page=50`).then((res) => res.json()).then(data => setResults(data.results))
       }
   }
 
