@@ -7,11 +7,6 @@ const Image = ({image, user, alt}) => {
   return (
     <div className='image-container' onClick={() => setLgShow(true)}>
       <img src={image.thumb} alt={alt} />
-      <div className='image-user'>        
-        <img src={user.profile_image.small} alt={user.first_name}/>
-        <span>{user.name}</span>        
-        <span>{user.total_likes}</span>
-      </div>
       <Modal
       size="lg"
       show={lgShow}
@@ -20,11 +15,20 @@ const Image = ({image, user, alt}) => {
     >
       <Modal.Header closeButton>
         <Modal.Title id="example-modal-sizes-title-lg">
-        {user.name}
+        <div className='image-user'>        
+          <div>
+            <img src={user.profile_image.small} alt={user.first_name}/>
+          </div>
+          <div>
+            <span>{user.name}</span>        
+            <span>{user.total_likes}</span>
+          </div>
+    </div>
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <img src={image.small} alt={alt} width='100%'/>
+        <img src={image.small} alt={alt} width='100%'/>  
+      
       </Modal.Body>
     </Modal>
     </div>

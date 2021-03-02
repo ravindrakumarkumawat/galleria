@@ -1,7 +1,17 @@
 .image-container {
   margin: .1rem;
-  border: 1px solid #dedede;
+  /* border: 1px solid #dedede; */
   background-color: #fff;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+
+.image-container > img {
+  border-radius: 1.5rem;
+}
+
+.image-container > img:hover {
+  opacity: .8;
 }
 
 .image-user {
