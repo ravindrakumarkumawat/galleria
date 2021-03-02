@@ -1,0 +1,9 @@
+.imagelist-container {
+  margin: 5rem 10rem 5rem 10rem;
+  border: 1px solid grey;
+}
+
+.imagelist-container {
+  display: flex;
+  flex-flow: wrap;
+}

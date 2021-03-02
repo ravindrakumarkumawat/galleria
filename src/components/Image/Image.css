@@ -1,0 +1,20 @@
+.image-container {
+  margin: .1rem;
+  border: 1px solid rgb(130, 230, 84);
+}
+
+.image-user {
+  display: flex;
+  justify-content: space-around;
+}
+
+.image-user > img {
+  border-radius: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.image-user > span {
+  color: rgb(129, 123, 123);
+  font-size: .8rem;
+}
