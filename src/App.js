@@ -1,10 +1,10 @@
 import './App.css';
-import ImageList from './components/ImageList/ImageList';
+import ImageList from './components/ImageList/ImageList'
 
 function App() {
   return (
     <div className="App">
-      <h1>Galleria</h1>
+      <h1 className="app-name">Galleria</h1>
       <ImageList />
     </div>
   );

@@ -1,18 +1,9 @@
-.imagelist-container {
-  margin: 5rem 10rem 5rem 10rem;
-}
-
-.imagelist-container {
-  display: flex;
-  flex-flow: wrap;
-}
-
 .search-input {
   height: 50px;
   width: 600px;
   border: 1px solid #dedede;
   background-color: transparent;
-  color: rgb(255, 255, 255);
+  color: #fff;
   font-size: 20px;
   padding: 5px 10px;
   border-radius: 3px;
