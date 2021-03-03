@@ -19,11 +19,16 @@ const ImageList = () => {
       setInput(event.target.value)
   }
 
-  const handleKeyPressed= (event) => {
-      setResults([])
-      if(input) {
-        fetch(`${searchPhotos}&page=1&query=${input}&per_page=50`).then((res) => res.json()).then(data => setResults(data.results))
-      }
+  const handleKeyUp= (event) => {
+      let timer
+
+      clearTimeout(timer)
+      timer = setTimeout(() => {
+        setResults([])
+        if(input) {
+          fetch(`${searchPhotos}&page=1&query=${input}&per_page=50`).then((res) => res.json()).then(data => setResults(data.results))
+        }
+      }, 300)
   }
 
   return (
@@ -34,7 +39,7 @@ const ImageList = () => {
           type='text' 
           placeholder='Search'
           onChange={handleChange}
-          onKeyUp={handleKeyPressed}
+          onKeyUp={handleKeyUp}
           className='search-input' />
       </div>
       <div className='imagelist-container'>
