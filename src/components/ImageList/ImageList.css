@@ -3,8 +3,10 @@
 }
 
 .imagelist-container {
-  display: flex;
-  flex-flow: wrap;
+  /* display: flex;
+  flex-flow: wrap; */
+  column-count: 5;
+  column-gap: 1rem;
 }
 
 .search-container {  

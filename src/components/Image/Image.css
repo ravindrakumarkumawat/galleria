@@ -1,13 +1,17 @@
 .image-container {
   margin: .1rem;
-  /* border: 1px solid #dedede; */
+  border: 1px solid #dedede;
   background-color: #fff;
   border-radius: 1.5rem;
   cursor: pointer;
+  display: inline-block;
+  width: 100%;
 }
 
 .image-container > img {
   border-radius: 1.5rem;
+  display:block;
+  width: 100%;
 }
 
 .image-container > img:hover {
