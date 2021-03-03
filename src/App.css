@@ -5,4 +5,21 @@
 .app-name {
   font-family: fantasy; 
   margin-top: 5rem; 
+  font-size: 5rem;
+}
+
+@media (max-width: 42.5rem) {
+  .app-name {
+    font-family: fantasy; 
+    margin-top: 3.5rem; 
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .app-name {
+    font-family: fantasy; 
+    margin-top: 2.5rem; 
+    font-size: 2.5rem;
+  }
 }
